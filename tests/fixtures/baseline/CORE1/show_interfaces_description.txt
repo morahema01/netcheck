@@ -1,0 +1,10 @@
+Interface                      Status         Protocol Description
+Et0/0                          up             up       TO-R1-e0/0
+Et0/1                          up             up       TO-CORE2-e0/1
+Et0/2                          up             up       TO-DIST1-e0/0
+Et0/3                          up             up       TO-DIST2-e0/1
+Et1/0                          admin down     down     UNUSED
+Et1/1                          admin down     down     UNUSED
+Et1/2                          admin down     down     UNUSED
+Et1/3                          up             up       MGMT
+Lo0                            up             up       ROUTER-ID

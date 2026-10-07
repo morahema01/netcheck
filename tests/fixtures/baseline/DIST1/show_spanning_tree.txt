@@ -1,0 +1,41 @@
+
+VLAN0010
+  Spanning tree enabled protocol rstp
+  Root ID    Priority    4106
+             Address     aabb.cc00.4000
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4106   (priority 4096 sys-id-ext 10)
+             Address     aabb.cc00.4000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Et1/0               Desg FWD 100       128.5    Shr 
+Et1/1               Desg FWD 100       128.6    Shr 
+Et1/2               Desg FWD 100       128.7    Shr 
+Po1                 Desg FWD 56        128.65   Shr 
+
+
+
+VLAN0020
+  Spanning tree enabled protocol rstp
+  Root ID    Priority    4116
+             Address     aabb.cc00.5000
+             Cost        56
+             Port        65 (Port-channel1)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    8212   (priority 8192 sys-id-ext 20)
+             Address     aabb.cc00.4000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Et1/0               Desg FWD 100       128.5    Shr 
+Et1/1               Desg FWD 100       128.6    Shr 
+Et1/2               Desg FWD 100       128.7    Shr 
+Po1                 Root FWD 56        128.65   Shr

@@ -1,0 +1,34 @@
+# NetCheck lab inventory. Matches the lab built by build_lab.py.
+devices:
+  - name: R1
+    role: edge
+    mgmt_ip: 192.168.1.201
+    platform: cisco_ios
+  - name: CORE1
+    role: core
+    mgmt_ip: 192.168.1.202
+    platform: cisco_ios
+  - name: CORE2
+    role: core
+    mgmt_ip: 192.168.1.203
+    platform: cisco_ios
+  - name: DIST1
+    role: dist
+    mgmt_ip: 192.168.1.204
+    platform: cisco_ios
+  - name: DIST2
+    role: dist
+    mgmt_ip: 192.168.1.205
+    platform: cisco_ios
+  - name: ACC1
+    role: access
+    mgmt_ip: 192.168.1.206
+    platform: cisco_ios
+  - name: ACC2
+    role: access
+    mgmt_ip: 192.168.1.207
+    platform: cisco_ios
+  - name: ACC3
+    role: access
+    mgmt_ip: 192.168.1.208
+    platform: cisco_ios

@@ -1,0 +1,10 @@
+# Snapshots and reports hold live device output. Keep them out of the repo.
+runs/
+reports/
+lab_output/
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 600" width="980" height="600" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="NetCheck lab topology: one edge router, two core switches, two distribution switches and three access switches">
+<rect width="980" height="600" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="28" y="76" font-size="15" font-weight="600" fill="#1b1f24">Edge</text>
+<text x="28" y="94" font-size="12" fill="#57606a">default route source</text>
+<text x="28" y="198" font-size="15" font-weight="600" fill="#1b1f24">Core</text>
+<text x="28" y="216" font-size="12" fill="#57606a">routed links, OSPF area 0</text>
+<text x="28" y="338" font-size="15" font-weight="600" fill="#1b1f24">Distribution</text>
+<text x="28" y="356" font-size="12" fill="#57606a">HSRP, STP root, LACP</text>
+<text x="28" y="478" font-size="15" font-weight="600" fill="#1b1f24">Access</text>
+<text x="28" y="496" font-size="12" fill="#57606a">VLAN 10 users, VLAN 20 servers</text>
+<line x1="20" y1="139" x2="960" y2="139" stroke="#d0d7de" stroke-dasharray="4 5"/>
+<line x1="20" y1="270" x2="960" y2="270" stroke="#d0d7de" stroke-dasharray="4 5"/>
+<line x1="20" y1="410" x2="960" y2="410" stroke="#d0d7de" stroke-dasharray="4 5"/>
+<line x1="400" y1="340" x2="320" y2="480" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="400" y1="340" x2="560" y2="480" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="400" y1="340" x2="800" y2="480" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="720" y1="340" x2="320" y2="480" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="720" y1="340" x2="560" y2="480" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="720" y1="340" x2="800" y2="480" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560" y1="78" x2="400" y2="200" stroke="#1f6feb" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560" y1="78" x2="720" y2="200" stroke="#1f6feb" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="400" y1="200" x2="720" y2="200" stroke="#1f6feb" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="400" y1="200" x2="400" y2="340" stroke="#1f6feb" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="400" y1="200" x2="720" y2="340" stroke="#1f6feb" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="720" y1="200" x2="720" y2="340" stroke="#1f6feb" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="720" y1="200" x2="400" y2="340" stroke="#1f6feb" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="400" y1="334" x2="720" y2="334" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="400" y1="346" x2="720" y2="346" stroke="#c2560c" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="524" y="328" width="72" height="24" rx="12" fill="#fff4e8" stroke="#c2560c"/>
+<text x="560" y="344" font-size="12" text-anchor="middle" fill="#c2560c">Po1 LACP</text>
+<rect x="494" y="52" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="560" y="76" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">R1</text>
+<text x="560" y="93" font-size="12" text-anchor="middle" fill="#57606a">edge router · .201</text>
+<rect x="334" y="174" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="400" y="198" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">CORE1</text>
+<text x="400" y="215" font-size="12" text-anchor="middle" fill="#57606a">.202</text>
+<rect x="654" y="174" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="720" y="198" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">CORE2</text>
+<text x="720" y="215" font-size="12" text-anchor="middle" fill="#57606a">.203</text>
+<rect x="334" y="314" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="400" y="338" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">DIST1</text>
+<text x="400" y="355" font-size="12" text-anchor="middle" fill="#57606a">.204</text>
+<rect x="654" y="314" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="720" y="338" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">DIST2</text>
+<text x="720" y="355" font-size="12" text-anchor="middle" fill="#57606a">.205</text>
+<rect x="254" y="454" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="320" y="478" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">ACC1</text>
+<text x="320" y="495" font-size="12" text-anchor="middle" fill="#57606a">.206</text>
+<rect x="494" y="454" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="560" y="478" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">ACC2</text>
+<text x="560" y="495" font-size="12" text-anchor="middle" fill="#57606a">.207</text>
+<rect x="734" y="454" width="132" height="52" rx="9" fill="#ffffff" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="800" y="478" font-size="16" font-weight="700" text-anchor="middle" fill="#1b1f24">ACC3</text>
+<text x="800" y="495" font-size="12" text-anchor="middle" fill="#57606a">.208</text>
+<line x1="28" y1="548" x2="68" y2="548" stroke="#1f6feb" stroke-width="2.6"/><text x="76" y="552" font-size="13" fill="#1b1f24">Routed /30 link (OSPF)</text>
+<line x1="250" y1="548" x2="290" y2="548" stroke="#c2560c" stroke-width="2.6"/><text x="298" y="552" font-size="13" fill="#1b1f24">802.1Q trunk (VLAN 10, 20)</text>
+<text x="28" y="578" font-size="12" fill="#57606a">Every device also has a management port on 192.168.1.0/24 (last octet shown). NetCheck runs on a laptop and reaches all eight over SSH.</text>
+</svg>

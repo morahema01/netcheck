@@ -1,0 +1,28 @@
+# Hardening lines pushed by harden.py. Review before applying.
+# Order per device: common, then by_role, then by_device.
+
+common:
+  # Only the management network may open an SSH session to the device.
+  - ip access-list standard MGMT-ACCESS
+  - permit 192.168.1.0 0.0.0.255
+  - line vty 0 4
+  - access-class MGMT-ACCESS in
+  - exit
+  # Send logs to a central server (the EVE-NG host in this lab).
+  - logging host 192.168.1.103
+
+by_role:
+  # R1 is the lab's time source; every other device syncs to it.
+  edge:
+    - ntp master 4
+  core:
+    - ntp server 192.168.1.201
+  dist:
+    - ntp server 192.168.1.201
+  access:
+    - ntp server 192.168.1.201
+
+# Pushed through the still-open session if a new login fails after the change.
+rollback:
+  - line vty 0 4
+  - no access-class MGMT-ACCESS in

@@ -1,0 +1,9 @@
+Interface                      Status         Protocol Description
+Et0/0                          up             up       TO-DIST1-e1/0
+Et0/1                          up             up       TO-DIST2-e1/0
+Et0/2                          up             up       USERS-ACCESS
+Et0/3                          up             up       SERVERS-ACCESS
+Et1/0                          admin down     down     UNUSED
+Et1/1                          admin down     down     UNUSED
+Et1/2                          admin down     down     UNUSED
+Et1/3                          up             up       MGMT

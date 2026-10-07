@@ -1,0 +1,7 @@
+# NetCheck dependencies.
+netmiko==4.8.0
+# Paramiko 5 removed SHA-1 key exchange and ssh-rsa host keys. IOS 15.x (the
+# lab's IOL images) offers nothing newer, so stay on the last 4.x release.
+paramiko==4.0.0
+# compare.py relies on the field names in this version's parsing templates.
+ntc_templates==9.3.0

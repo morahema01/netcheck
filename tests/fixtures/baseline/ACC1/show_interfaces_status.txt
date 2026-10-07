@@ -1,0 +1,10 @@
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Et0/0     TO-DIST1-e1/0      connected    trunk        auto   auto unknown
+Et0/1     TO-DIST2-e1/0      connected    trunk        auto   auto unknown
+Et0/2     USERS-ACCESS       connected    10           auto   auto unknown
+Et0/3     SERVERS-ACCESS     connected    20           auto   auto unknown
+Et1/0     UNUSED             disabled     1            auto   auto unknown
+Et1/1     UNUSED             disabled     1            auto   auto unknown
+Et1/2     UNUSED             disabled     1            auto   auto unknown
+Et1/3     MGMT               connected    routed       auto   auto unknown

@@ -1,0 +1,11 @@
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                10.0.0.1        YES TFTP   up                    up      
+Ethernet0/1                10.0.0.5        YES TFTP   up                    up      
+Ethernet0/2                unassigned      YES TFTP   administratively down down    
+Ethernet0/3                unassigned      YES TFTP   administratively down down    
+Ethernet1/0                unassigned      YES TFTP   administratively down down    
+Ethernet1/1                unassigned      YES TFTP   administratively down down    
+Ethernet1/2                unassigned      YES TFTP   administratively down down    
+Ethernet1/3                192.168.1.201   YES TFTP   up                    up      
+Loopback0                  10.255.0.1      YES TFTP   up                    up      
+Loopback100                203.0.113.1     YES TFTP   up                    up

@@ -1,0 +1,30 @@
+# Read-only health checks. Every command here must start with "show".
+# "common" runs on every device; "by_role" adds checks that only make sense
+# for that kind of device.
+common:
+  - show version
+  - show ip interface brief
+  - show interfaces description
+  - show cdp neighbors
+  - show running-config     # used by audit.py; secrets are redacted when saved
+
+by_role:
+  edge:
+    - show ip ospf neighbor
+    - show ip route
+  core:
+    - show ip ospf neighbor
+    - show ip route
+  dist:
+    - show ip ospf neighbor
+    - show ip route
+    - show vlan brief
+    - show interfaces trunk
+    - show spanning-tree
+    - show etherchannel summary
+    - show standby brief
+  access:
+    - show vlan brief
+    - show interfaces trunk
+    - show interfaces status
+    - show spanning-tree
