@@ -8,7 +8,27 @@ Built and tested on an eight-node Cisco lab in EVE-NG.
 
 After a maintenance window, someone has to prove the network is as healthy as it was before. Doing that by hand means running the same `show` commands on every device and comparing the output by eye, usually at 3 AM. It is slow, and the one line that matters is easy to miss.
 
-The idea comes from the blog post *I Turned a Three-Hour Network Maintenance Check Into Three Minutes With Python*, whose author built a parallel collector and named automatic pre/post comparison as the next step. NetCheck is that next step: it does not just collect the evidence, it reads it.
+## The scenario this is based on
+
+The idea comes from the blog post *I Turned a Three-Hour Network Maintenance Check Into Three Minutes With Python*.
+
+The author describes a 3 AM maintenance window. The team had upgraded dozens of switches, and what remained was the part nobody enjoys: running the same health checks on every device, copying the output, and comparing it by eye against the state recorded before the change. When the scope reached 200 devices, the manual approach stopped making sense.
+
+Their fix was a small Python utility that connected to devices in parallel, ran a standard set of read-only checks, saved one log per device and listed the failures for a rerun. It cut the job from over three hours to about three minutes. On its second run, the logs showed an inactive interface on a core node after a firmware reload, found before any user noticed.
+
+The author is clear about what the tool did not do: it collected evidence, and a person still had to read it. They list the next steps they would take. NetCheck is built from that list.
+
+| The author's next step | NetCheck |
+|---|---|
+| Compare pre-change and post-change values automatically and highlight what matters | `compare.py` gives every device a PASS, WARN or FAIL verdict and an HTML report |
+| Controlled retry behaviour | One retry for an unreachable device, never for a rejected login |
+| A clear concurrency setting | `--workers` |
+| Metrics: success rate, connection time, command time, retry count | Recorded per device in `summary.json` |
+| Better support for different device types | Partly. Commands are chosen per device role, but only Cisco IOS is tested |
+| Credentials in an approved secrets system | Not yet. Environment variables or a prompt, never stored |
+| Connect results to the change record | Not yet. Each run writes a JSON report that could be attached to one |
+
+The lab test recreates the author's catch. A core uplink was taken down as the "change", and NetCheck flagged the interface and the lost OSPF neighbors on both ends without anyone reading a log. It also reports a device that restarted between snapshots, which is the reload case from the post.
 
 ## What it does
 
