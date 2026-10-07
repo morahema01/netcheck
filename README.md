@@ -44,7 +44,7 @@ The lab test recreates the author's catch. A core uplink was taken down as the "
 
 ![Lab topology](docs/topology.svg)
 
-Eight Cisco IOL nodes: OSPF in the core, HSRP and spanning-tree root split across two distribution switches, an LACP EtherChannel between them, and three access switches. It fits in an EVE-NG VM with 8 GB of RAM.
+Eight Cisco IOL nodes: OSPF in the core, HSRP and spanning-tree root split across two distribution switches, an LACP EtherChannel between them, and three access switches. 
 
 ## Validating a change
 
