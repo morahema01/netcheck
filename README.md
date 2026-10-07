@@ -1,5 +1,5 @@
 # NetCheck [*I Turned a Three-Hour Network Maintenance Check Into Three Minutes With Python*]
-
+https://hackernoon.com/i-turned-a-three-hour-network-maintenance-check-into-three-minutes-with-python
 Change validation for network devices. NetCheck takes a snapshot of the network before a change and another after it, then tells you exactly what is different and gives every device a PASS, WARN or FAIL verdict. It also audits device configurations against hardening rules and can push the fixes safely.
 
 Built and tested on an eight-node Cisco lab in EVE-NG.
